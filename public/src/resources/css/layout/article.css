@@ -1,0 +1,25 @@
+/* article */
+#article {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: block;
+  overflow: auto;
+  padding: 20px 30px;
+  overflow-y: hidden;
+}
+
+/* left */
+
+#left_item {
+  width: auto;
+  float: left;
+}
+
+#left_item .ad {
+  height: 135px;
+  position: relative;
+  background: url(/public/src/resources/images/ewreq.jpg) no-repeat;
+  background-size: 750px 135px;
+}

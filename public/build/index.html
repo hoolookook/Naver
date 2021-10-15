@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Naver</title>
+    <meta name="description" content="" />
+
+    <!-- 참조 -->
+    <script src="https://unpkg.com/@egjs/flicking/dist/flicking.pkgd.min.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../src/resources/css/swiper-bundle.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js""></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../src/resources/css/style.css">
+
+    <!-- sass 지금은 안씀 -->
+    <!-- <link rel="stylesheet" href="/dist/assets/sass/style.css"> -->
+    <!-- script -->
+</head>
+<body>
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header" >
+            <div id="wrap">
+                <div class="logo_wrap">
+                    <h1 class="logo">
+                        <a href="#" class="naver_logo sprite_img ir_so">
+                            네이버홈페이지입니다
+                        </a>
+                    </h1>
+                </div>
+                <div class="search_wrap">
+                    <input type="text" class="search_Term" placeholder="">
+                    <button type="submit" class="search_Button">
+                        <span class="img sprite_img"></span>
+                    </button>
+                    <a href="#" class="keyboard_wrap">
+                        <span class="keyboard_Button sprite_img ir_so">
+                            키보드
+                        </span>
+                    </a>
+                    <a href="#" class="autoComplite_wrap">
+                        <span class="autoC_Button sprite_img ir_so">
+                            자동완성저장
+                        </span>
+                    </a>
+                </div>
+                <div class="etc_wrap">
+                    <ul class="container">
+                        <li>
+                            <a href="#" class="way_back_home">네이버를 시작페이지로</a>
+                            <a href="#" class="next_btn sprite_img"></a>
+                        </li>
+                        <li><a href="#" class="JuniorNaver sprite_img"></a></li>
+                        <li><a href="#" class="HappyBin sprite_img"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="gnb" >
+                <div class="gnb_wrap clearfix">
+                    <ul class="green_menu">
+                        <li class="mail">
+                            <a href="#" >
+                                <div class="icon sprite_img"></div>
+                                매일
+                            </a>
+                        </li>
+                        <li class="cafe"><a href="#">카페</a></li>
+                        <li class="blog"><a href="#" >블로그</a></li>
+                        <li class="jisikin"><a href="#">지식iN</a></li>
+                        <li class="shopping"><a href="#" class="icon sprite_img"></a></li>
+                        <li class="shopping_live"><a href="#" class="icon sprite_img"></a></li>
+                        <li class="pay"><a href="#" >Pay</a></li>
+                        <li class="TV"><a href="#"><div class="icon sprite_img"></div> TV</a></li>
+                    </ul>
+                    <ul class="black_menu">
+                        <li><a href="#">사전</a></li>
+                        <li><a href="#">뉴스</a></li>
+                        <li><a href="#">증권</a></li>
+                        <li><a href="#">부동산</a></li>
+                        <li><a href="#">지도</a></li>
+                        <li><a href="#">VIBE</a></li>
+                        <li><a href="#">책</a></li>
+                        <li><a href="#">웹툰</a></li>
+                    </ul>
+                    <a href="#" class="more_btn">더보기<div class="icon sprite_img"></div></a>
+                    <div class="slide">
+                        <ul class="weather">
+                            <li class="icon weather_img"><a href="#"></a></li>
+                            <li class="w_nowtemp"><a href="#" >27.0°</a></li>
+                            <li class="w_detail"><a href="#" >구름많음</a></li>
+                            <li class="w_temp left"><a href="#" >24.0°</a></li>
+                            <li class="w_temp middle"><a href="#" >/</a></li>
+                            <li class="w_temp right"><a href="#" >38.0°</a></li>
+                            <li class="w_place"><a href="#" >삼송동</a></li>
+                        </ul>
+                        <ul class="Nfog">
+                            <li><a href="#" class="fog_12p">&nbsp;&nbsp;&nbsp;미세</a></li>
+                            <li class="icon sprite_img"><a href="#"></a></li>
+                            <li><a href="#" class="fog_13p">좋음</a></li>
+                            <li><a href="#" class="fog_12p">초미세</a></li>
+                            <li class="icon sprite_img"><a href="#"></a></li>
+                            <li><a href="#" class="fog_13p">좋음</a></li>
+                            <li><a href="#" class="fog_12p">삼송동</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+        <!-- article -->
+        <div id="article">
+            <!-- 주 컨텐츠 -->
+            <div id="left_item">
+                <div class="ad"></div>
+                <div class="newsStand">
+                    <h2 class="ir_so">뉴스스탠드dsdsd</h2>
+                    <div class="rollingNews">
+                        <div class="newsName">
+                            <a href="#">연합뉴스<div class="icon sprite_img"></div></a>
+                        </div>
+                        <div class="rolling_slide">
+                            <ul>
+                                <li><a href="#">김정은, '홍수피해' 시진핑에 위문 구두친서…"복구투쟁 지지"</a></li>
+                                <li><a href="#">주유소 휘발유 가격 12주 연속 상승…ℓ당 평균 1천637원</a></li>
+                            </ul>
+                        </div>
+                        <ul class="category">
+                            <li><a href="#">네이버뉴스</a></li>
+                            <li><a href="#">연예</a></li>
+                            <li><a href="#">스포츠</a></li>
+                            <li><a href="#">경제</a></li>
+                        </ul>
+                    </div>
+                    <div class="news_option">
+                        <div class="wrap">
+                            <ul class="option_left">
+                                <li><a href="#"><div class="icon sprite_img"></div>뉴스스탠드</a></li>
+                                <li><a href="#"><div class="icon sprite_img"></div>구독한 언론사</a></li>
+                                <li><a href="#">전체언론사</a></li>
+                            </ul>
+                            <ul class="option_right">
+                                <li><a href="#" class="icon sprite_img"></a></li>
+                                <li><a href="#" class="icon sprite_img"></a></li>
+                                <li><a href="#" class="icon sprite_img"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNews">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/002.png" alt="프레시안"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/003.png" alt="뉴시스"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/005.png" alt="국민일보"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/006.png"  alt="미디어 오늘"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/008.png"  alt="머니투데이"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/009.png"  alt="메일경제"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/013.png"  alt="연합인포맥스"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/014.png"  alt="파이낸셜뉴스"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/015.png"  alt="한국경제"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/016.png"  alt="헤럴드경제"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/018.png"  alt="이데일리"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/020.png"  alt="동아일보"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/021.png"  alt="문화일보"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/022.png"  alt="세계일보"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/025.png"  alt="중앙일보"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/028.png"  alt="한겨레"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/011.png"  alt="서울경제"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/029.png"  alt="디지털타임즈"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/030.png"  alt="전자신문"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/031.png"  alt="아이뉴스24"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/032.png"  alt="경향신문"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/038.png"  alt="한국일보"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/044.png"  alt="THEKOREAHERALD"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/047.png"  alt="오마이뉴스"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/052.png"  alt="YTN"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/055.png"  alt="SBS"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/056.png"  alt="KBS"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/057.png"  alt="MBN"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/075.png"  alt="맥스무비"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/076.png"  alt="스포츠조선"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/079.png"  alt="노컷뉴스"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/081.png"  alt="서울신문"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/092.png"  alt="ZDNETKOREA"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/117.png"  alt="MYDAILY"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/138.png"  alt="디지털데일리"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="../src/resources/images/news/139.png"  alt="SPORTALKOREA"></a></div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-button-next-unique icon sprite_img"></div>
+                        
+                    </div>
+                </div>
+                <div class="today_read">
+                    <!-- <img src="../assets/testimage/test12.PNG" class="testimg" alt=""> -->
+                    <div class="top clearfix">
+                        <ul class="left">
+                            <li><p>오늘 읽을만한 글&nbsp</p></li>
+                            <li>주제별로 분류된 다양한 글 모음</li>
+                        </ul>
+                        <ul class="right">
+                            <li><b style="color: #000000;">1,811</b>&nbsp개의 글</li>
+                            <li><a href="#">
+                                <div class="sprite_img icon"></div>관심주제 설정</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <div class="items">
+                            <ul class="clearfix">
+                                <li class="item"><a href="#">책방</a></li>
+                                <li class="item"><a href="#">부모i</a></li>
+                                <li class="item"><a href="#">법률</a></li>
+                                <li class="item"><a href="#">패션뷰티</a></li>
+                                <li class="item"><a href="#">동물공감</a></li>
+                                <li class="item"><a href="#">디자인</a></li>
+                                <li class="item"><a href="#">중국</a></li>
+                                <li class="item"><a href="#">FARM</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn clearfix">
+                        <div class="prev_icon sprite_img">
+    
+                        </div>
+                        <div class="next_icon sprite_img">
+    
+                        </div>
+                    </div>
+                    <div class="detail clearfix">
+                        <div class="inside">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/todayread1.jpg" alt="책방라이브"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방라이브' 7/29 (목) 오늘 오후 7시</em>
+                                    <strong class="title_else">동네책방 온라인 투어 X 순천 책방심다</strong>
+                                    <p class="desc">
+                                        전국 구석구석 특색있는 동네책방을 라이브로 찾아갑니다 순천 '책방심다'
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_inner">요조의 동네책방 라이브 투어</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/todayread2.jpg" width="98" height="98" alt="책방지기 추천 책 01"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방지기 추천 책 01</em>
+                                    <strong class="title_else">10살의 마음으로 돌아가 볼 수 있는 책</strong>
+                                    <p class="desc">
+                                        
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_inner">동시집 '다줄게'</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/todayread3.jpg" width="98" height="98" alt="책방지기 추천 책 02"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방지기 추천 책 02</em>
+                                    <strong class="title_else">20대의 저자가 터득한 작은 깨달음이 담긴 책</strong>
+                                    <!-- <p class="desc">
+                                        
+                                    </p> -->
+                                    <div class="source_box">
+                                        <span class="source_inner">권수정 산문집</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/todayread4.jpg" 
+                                    width="98" height="98" alt="책방 라이브 예고"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방 라이브 예고</em>
+                                    <strong class="title_else">아나운서 문지애의 첫 에세이 7월 30일 (금) 오후 5시</strong>
+                                    <p class="desc">
+                                        
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_inner">북토크 라이브데이</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plusbooks clearfix">
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book (1).jfif" 
+                                    width="170" width="114" alt="목말라서 물 마셨을 뿐인데.. 뇌의 놀라운 변화들"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        목말라서 물 마셨을 뿐인데.. 뇌의 놀라운 변화들
+                                    </strong>
+                                    <p class="desc">
+                                        목이 말랐을 때 물 한 잔 마셨던 경험을 떠올려보라. 
+                                        마지막 한 방울까지 마시고 나서 몇 초 이내에 갈증이 줄어들었을 것이다. 
+                                        이 현상은 당연하게 보일 수 있지만 실제로 물이 혈류에 도달하려면 20분 정도가 걸린다.
+                                        그러니 물을 마시고 몇 초 만에 갈증을 해소할 수는 없을 것이다.
+                                        그렇다면 무억이 당신의 갈증을 해소했을까? 바로 예측이다. 뇌는 마시고 삼키
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">1주일 전</span>
+                                        <span class="source_inner">더 퀘스트</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book (2).jfif" 
+                                    width="170" width="114" alt="팬데믹 이후에 인플레이션이 온다"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        팬데믹 이후에 인플레이션이 온다
+                                    </strong>
+                                    <p class="desc">
+                                        인플레이션 : 화폐가치가 하락하여 물가가 전반적 ·지속적으로 상승하는 경제현상. 
+                                        (두산백과)역병과 전쟁의 공통점을 꼽자면 둘 다 많은 사상자가 발생한다는 것입니다. 
+                                        팬데믹 같은 역병이 창궐한 시기에 국가는 바이러스를 막기 위해 경제적인 봉쇄도 취하고, 
+                                        국민들이 바이러스로 인한 피해를 보호하기 위해 막대한 국가 재정을 쏟아 붓습니다 
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">1주일 전</span>
+                                        <span class="source_inner">월북</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book (3).jfif" 
+                                    width="170" width="114" alt="아기의 시점에서 엄마를 연구하고 기록한, 최초의 엄마 도감"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        아기의 시점에서 엄마를 연구하고 기록한, 최초의 엄마 도감
+                                    </strong>
+                                    <p class="desc">
+                                        "엄마가 태어났습니다. 나와 함께"아기의 시점에서 엄마를 연구하고 기록한, 
+                                        최초의 엄마 도감 생명이 잉태되었다는 것을 알게 된 순간부터 엄마의 관찰은 시작된다. 
+                                        모자 수첩에는 생명의 작디 작은 변화도 절대 놓치지 않고 기록한 엄마의 세심함이 
+                                        한 가득 담겨 있다. 태어나기 전부터 생김새를 예상해 출력한 사진, 키와 몸무게
+                                        변화 추이, 움직임
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">1주일 전</span>
+                                        <span class="source_inner">용진주니어</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book (4).jfif" 
+                                    width="170" width="114" alt="게임큐브의 모든것을 담은 퍼펙트 가이드"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        게임큐브의 모든것을 담은 퍼펙트 가이드
+                                    </strong>
+                                    <p class="desc">
+                                        마에다 히로유키의 퍼펙트 카탈로그 시리즈가 국내에서 꽤 인기였는지 
+                                        시리즈가 줄기차게 나오다가 드디어 2001년부터 2006년까지 발매되었던
+                                        닌텐도의 콘솔게임기인 닌텐도 게임큐브 퍼펙트 카탈로그까지 나오게 되었다.
+                                        닌텐도 게임큐브. 닌텐도 최초의 광학 드라이브 탑재 머신이라는 점을 강조하고 있다.
+                                        이번 역시 마에다 히로유키 저에 조기현 감수, 김경문 옮김. 
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">1주일 전</span>
+                                        <span class="source_inner">뽀꼬빠</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book (5).jfif" 
+                                    width="170" width="114" alt="새벽의 아픔만큼 더 깊고 단단해진 당신, '투에고' 신간"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        새벽의 아픔만큼 더 깊고 단단해진 당신, '투에고' 신간
+                                    </strong>
+                                    <p class="desc">
+                                        나는 가끔 내가 싫다가도 애틋해서 저자 투에고 지음 / 출판사 위즈덤하우스
+                                        | 2021.07.21. 책소개 후회와 미련이 새벽을 삼켜도 수많은 아침이 너를 기다리고 있어
+                                        『나는 어른이 되어서도 가끔 울었다』로 20만 구독자의 마음을 사로잡은 작가, 투에고가
+                                        ‘나로 살아간다는 것’에 대한 진솔한 회고로 돌아왔다. 이 책은 뜨겁고 어설프고 연약했던
+                                        과거의 자신
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">1주일 전</span>
+                                        <span class="source_inner">더 퀘스트</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book (17).jfif" 
+    
+                                    width="170" width="114" alt="무너지지 않는 멘탈 관리 프로젝트"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        무너지지 않는 멘탈 관리 프로젝트
+                                    </strong>
+                                    <p class="desc">
+                                        우울, 불안, 번아웃, 스트레스에 무너지지 않는 멘탈 관리 프로젝트우리 안에 잠재된
+                                        회복탄력성을 꺼내 쓰는 법 코로나19 이후 스스로 목숨을 끊는 사람들이 많아지고 있다.
+                                        코로나19로 위기에 내몰린 사람들이 조용히 설 자리를 잃어가면서 이른바 ‘조용한 학살’이 시작됐다.
+                                        특히 20~30대 여성들의 자살시도자 비율이 가장 크게 급증했다.
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">3주일 전</span>
+                                        <span class="source_inner">더굿북</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bestseller_book">
+                        <div class="top clearfix">
+                            <ul class="left">
+                                <li><p>베스트 셀러</p></li>
+                                <li>&nbsp&nbsp집계기간 2021.7.26 ~ 2021.8.1</li>
+                            </ul>
+                            <ul class="right">
+                                <span class="source_inner">제공</span>
+                                <span class="source_inner">알라딘</span>
+                            </ul>
+                        </div>
+                        <div class="list_book">
+                            <div class="book">
+                                <a href="#" class="hyper">
+                                    <div class="photo">
+                                        <img src="../src/resources/images/book/book (6).jfif" width="120" height="183" alt="달러구트 꿈 백화점 2">
+                                    </div>
+                                    <strong>1&nbsp달러구트&nbsp꿈&nbsp백화점&nbsp2</strong>
+                                    <div class="data clearfix">
+                                        <ul class="left">
+                                            <li>저자</li>
+                                            <li>출판</li>
+                                            <li>평점</li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>이미예</li>
+                                            <li>팩토리나인</li>
+                                            <li>
+                                                <div class="sprite_img icon"></div>10
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="book">
+                                <a href="#" class="hyper">
+                                    <div class="photo">
+                                        <img src="../src/resources/images/book/book (14).jfif" width="120" height="183" alt="밝은 밤">
+                                    </div>
+                                    <strong>2&nbsp밝은 밤</strong>
+                                    <div class="data clearfix">
+                                        <ul class="left">
+                                            <li>저자</li>
+                                            <li>출판</li>
+                                            <li>평점</li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>최은영</li>
+                                            <li>문학동네</li>
+                                            <li>
+                                                <div class="sprite_img icon"></div>10
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="book">
+                                <a href="#" class="hyper">
+                                    <div class="photo">
+                                        <img src="../src/resources/images/book/book (8).jfif" width="120" height="183" alt="미래의 부">
+                                    </div>
+                                    <strong>3&nbsp미래의 부</strong>
+                                    <div class="data clearfix">
+                                        <ul class="left">
+                                            <li>저자</li>
+                                            <li>출판</li>
+                                            <li>평점</li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>이지성</li>
+                                            <li>차이정원</li>
+                                            <li>
+                                                <div class="sprite_img icon"></div>0
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="book">
+                                <a href="#" class="hyper">
+                                    <div class="photo">
+                                        <img src="../src/resources/images/book/book (9).jfif" width="120" height="183" alt="완전한 행복">
+                                    </div>
+                                    <strong>4&nbsp완전한 행복</strong>
+                                    <div class="data clearfix">
+                                        <ul class="left">
+                                            <li>저자</li>
+                                            <li>출판</li>
+                                            <li>평점</li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>정유정</li>
+                                            <li>은행나무</li>
+                                            <li>
+                                                <div class="sprite_img icon"></div>9.29
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="book">
+                                <a href="#" class="hyper">
+                                    <div class="photo">
+                                        <img src="../src/resources/images/book/book (15).jfif" width="120" height="183" alt="달러구트 꿈 백화점 1">
+                                    </div>
+                                    <strong>5&nbsp달러구트&nbsp꿈&nbsp백화점&nbsp1</strong>
+                                    <div class="data clearfix">
+                                        <ul class="left">
+                                            <li>저자</li>
+                                            <li>출판</li>
+                                            <li>평점</li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>이미예</li>
+                                            <li>팩토리나인</li>
+                                            <li>
+                                                <div class="sprite_img icon"></div>8.53
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plusbooks clearfix">
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book21.jfif" 
+                                    width="170" width="114" alt="언택트 여행족을 위한 안내서"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        언택트 여행족을 위한 안내서
+                                    </strong>
+                                    <p class="desc">
+                                        어느덧 2021년의 절반이 지나고 하반기를 알리는 7월입니다. 다들 여름휴가를 앞두고 휴가지 결정에 여념이 없으실 텐데요. 바다도 산도 좋지만, 여전히'여름철 휴가지’ 하면 계곡을 떠올리는 분들이 많이 계실 겁니다. 계곡은 특히 여름이라야 그 가치가 빛나고 대한민국에서만 즐길 수 있는 장소이기에 더욱 특별하게 느껴지는 것이 아닐까요? 계곡 주변의
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">2주일 전</span>
+                                        <span class="source_inner">이밥차</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book2.jfif" 
+                                    width="170" width="114" alt="올 여름 꼭 한 권만 읽는다면!"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        올 여름 꼭 한 권만 읽는다면!
+                                    </strong>
+                                    <p class="desc">
+                                        나는 고백한다 1 작가 자우메 카브레 출판 민음사 발매 2020.11.30. 리뷰보기 요즘 바이올린 음악을 많이 듣는다. 이제껏 바이올린 연주는 주로 가을이나 겨울처럼 쓸쓸한 계절에 들었는데, 요즘은 출퇴근길에도, 산책을 나가서도 바이올린 음색에 귀를 기울인다. &lt;나는 고백한다&gt;를 읽으면 누구라도 그렇게 될 것이다. ‘비알’이라는 이름의 스토리오니 바이올린
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">1개월 전</span>
+                                        <span class="source_inner">socker</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book3.jfif" 
+                                    width="170" width="114" alt="한 전쟁영웅의 '편두통'이 오늘날 초강대국 미국을 만들었다고?"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        한 전쟁영웅의 '편두통'이 오늘날 초강대국 미국을 만들었다고?
+                                    </strong>
+                                    <p class="desc">
+                                        ‘오늘날 미국은 어떻게 그토록 막강한 힘을 가진 사실상 유일 패권국이 될 수 있었을까?’ 누구나 한 번쯤 이런 의문을 품어보았을 겁니다. 위와 같은 질문을 받았다면 여러분은 어떻게 답하시겠습니까? 아마도 다음과 같은 답변이 나오지 않을까요? “대서양과 태평양을 모두 자국의 앞바다로 둘 정도로 광대한 영토와 지리적 이점 덕분입
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">3개월 전</span>
+                                        <span class="source_inner">인터파크 북DB</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book4.jfif" 
+                                    width="170" width="114" alt="독버섯에 중독된 버섯 회사 CEO의 코믹 복수 활극"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        독버섯에 중독된 버섯 회사 CEO의 코믹 복수 활극
+                                    </strong>
+                                    <p class="desc">
+                                        "버섯밖에 모르던 버섯 회사 CEO, 독버섯에 중독되다?"유럽에서 가장 재미있는 작가. 헬싱키 누아르의 제왕안티 투오마이넨의 국내 첫 출간작!
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">3주일 전</span>
+                                        <span class="source_inner">포레스트북스</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insideright">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/book (5).jfif" 
+                                    width="170" width="114" alt="새벽의 아픔만큼 더 깊고 단단해진 당신, '투에고' 신간"></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <em class="theme_category">책방</em>
+                                    <strong class="title_else">
+                                        새벽의 아픔만큼 더 깊고 단단해진 당신, '투에고' 신간
+                                    </strong>
+                                    <p class="desc">
+                                        나는 가끔 내가 싫다가도 애틋해서 저자 투에고 지음 / 출판사 위즈덤하우스
+                                        | 2021.07.21. 책소개 후회와 미련이 새벽을 삼켜도 수많은 아침이 너를 기다리고 있어
+                                        『나는 어른이 되어서도 가끔 울었다』로 20만 구독자의 마음을 사로잡은 작가, 투에고가
+                                        ‘나로 살아간다는 것’에 대한 진솔한 회고로 돌아왔다. 이 책은 뜨겁고 어설프고 연약했던
+                                        과거의 자신
+                                    </p>
+                                    <div class="source_box">
+                                        <span class="source_date">1주일 전</span>
+                                        <span class="source_inner">seolae</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media clearfix">
+                        <div class="inside">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/11.jpg" width="231" height="130" alt="꿀성대 한예리가 읽어주는 책!"><span class="sprite_img icon"></span></a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <strong class="title_else">
+                                        꿀성대 한예리가 읽어주는 책!
+                                    </strong>
+                                    <div class="source_box">
+                                        <span class="source_date">1주일 전</span>
+                                        <span class="source_inner">LG헬로비전 헬로tv</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/12.jpg" width="231" height="130" alt="한국 문학을 바꾼 살아있는 별, 무진기행"><span class="sprite_img icon"></span</a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <strong class="title_else">
+                                        한국 문학을 바꾼 살아있는 별, 무진기행
+                                    </strong>
+                                    <div class="source_box">
+                                        <span class="source_date">3주일 전</span>
+                                        <span class="source_inner">KBS뉴스</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="photoArea">
+                                <a href="#"><img src="../src/resources/images/book/13.jpg" width="231" height="130" alt="'이 세상은 죽음의 세상이죠' 수학자의 시선으로 본 우리의 세상"><span class="sprite_img icon"></span</a>
+                            </div>
+                            <div class="textArea">
+                                <a href="#">
+                                    <strong class="title_else">
+                                        '이 세상은 죽음의 세상이죠' 수학자의 시선으로 본 우리의 세상
+                                    </strong>
+                                    <div class="source_box">
+                                        <span class="source_date">6일전</span>
+                                        <span class="source_inner">책 읽어주는 나의 서재</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="new_contents">
+                        <a href="#"><div class="icon sprite_img"></div><p>새로운 글 더보기</p></a>
+                    </div>
+                </div>
+            </div>
+             <!-- // -->
+            <!-- 사이드바 -->
+            <div id="right_item">
+                <div id="Rwrap">
+                    <div id="Space">
+                        <div class="login_Area">
+                            <div class="login_detail">
+                                <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+                            </div>
+                            <div class="login button">
+                                <a href="#">
+                                    <div class="icon sprite_img"></div>
+                                        로그인
+                                </a>
+                            </div>
+                            <ul class="account_area clearfix">
+                                <li><a href="#" class="f_id"><div class="icon sprite_img"></div>아이디</a></li>
+                                <li><a href="#" class="f_pw">비밀번호찾기</a></li>
+                                <li><a href="#" class="sign_in"><div class="icon sprite_img"></div>
+                                    회원가입
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="issueSlider">
+                        <div class="aside_slide">
+                            <ul>
+                                <li class="issue"><a href="#"><i class="badge">&nbsp;&nbsp;신문1면&nbsp;&nbsp;</i>언론사 헤드라인 보기</a></li>
+                                <li class="covid"><a href="#"><i class="badge">&nbsp;&nbsp;이슈&nbsp;&nbsp;</i>코로나바이러스감염증-19 현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="button">
+                            <div><a href="#" class="prev sprite_img icon"></a></div>
+                            <div><a href="#" class="next sprite_img icon"></a></div>
+                        </div>
+                        
+                    </div>
+                    <div id="ads">
+                        
+                    </div>
+                    <div id="shopping">
+                        <div class="shopping_Area">
+                            <div class="shopping_menu clearfix">
+                                <ul class="menu_left">
+                                    <li><a href="#" class="icon shopping_img"></a></li>
+                                    <li><a href="#" class="">트렌드쇼핑</a></li>
+                                    <li><a href="#" class="icon shopping_img"></a></li>
+                                </ul>
+                                <ul class="menu_right">
+                                    <ul class="news_icon">
+                                        <li><a href="#">상품</a></li>
+                                        <li><a href="#">쇼핑몰</a></li>
+                                        <li><a href="#">MEN</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="shopping_cate">
+                                <div class="cate_wrap">
+                                    <ul class=" clearfix">
+                                        <li><a href="#">쿠팡<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">G마켓<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">옥션<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">11번가<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">이마트몰<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">티몬</a></li>
+                                    </ul>
+                                    <ul class="clearfix">
+                                        <li><a href="#">위메프<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">신세계몰<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">올리브영<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">롯데i몰<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">GS샵<span class="shop_dot"></span></a></li>
+                                        <li><a href="#">CJ온스타일</a></li>
+                                    </ul>
+                                </div>
+                                <div class="shopping_item_wrap">
+                                    <div class="button">
+                                        <div class="countN">
+                                            <p><a id="clicks">1</a>/2</p>
+                                        </div>
+                                        <div class="prev"><a href="#" onClick="minusClick()" class="sprite_img icon"></a></div>
+                                        <div class="next"><a href="#" onClick="plusClick()"  class="sprite_img icon"></a></div>
+                                    </div>
+                                    <div class="oneslide-lots">
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1.jpg" alt="무선청소기 핫딜!">
+                                                </div>
+                                                <div class="title">
+                                                    <div>무선청소기 핫딜!</div>
+                                                    <div>보일때 사야해!</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/4.jpg" alt="여름 내내 예뻐">
+                                                </div>
+                                                <div class="title">
+                                                    <div>여름 내내 예뻐</div>
+                                                    <div>모두 탐내는 옷</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/7.jpg" alt="이렇게~ 입으니">
+                                                </div>
+                                                <div class="title">
+                                                    <div>이렇게~ 입으니</div>
+                                                    <div>남친이 좋아해!</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/10.jpg" alt="지금은 무료배송">
+                                                </div>
+                                                <div class="title">
+                                                    <div>지금은 무료배송</div>
+                                                    <div>전상품 무배 진행</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/2.jpg" alt="사무실 인싸 ITEM">
+                                                </div>
+                                                <div class="title">
+                                                    <div>사무실 인싸 ITEM</div>
+                                                    <div>예쁜데 건조까지?</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/5.jpg" alt="유정 2일만에?">
+                                                </div>
+                                                <div class="title">
+                                                    <div>유정 2일만에?</div>
+                                                    <div>이걸로 숫자바꿔</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/8.jpg" alt="BEST 여름상품">
+                                                </div>
+                                                <div class="title">
+                                                    <div>BEST 여름상품</div>
+                                                    <div>1+1에 타임세일!</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/11.jpg" alt="젖으면200%환불">
+                                                </div>
+                                                <div class="title">
+                                                    <div>젖으면200%환불!</div>
+                                                    <div>물놀이방수마스크</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/3.jpg" alt="인기폭발 원피스">
+                                                </div>
+                                                <div class="title">
+                                                    <div>인기폭발 원피스</div>
+                                                    <div>2만원대에 득템!</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/6.jpg" alt="화제의 팬트리">
+                                                </div>
+                                                <div class="title">
+                                                    <div>화제의 팬트리</div>
+                                                    <div>47%할인 서둘러</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/9.jpg" alt="여름 이거하나로!">
+                                                </div>
+                                                <div class="title">
+                                                    <div>여름 이거하나로!</div>
+                                                    <div>한장에 640원 꼴~</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/12.jpg" alt="2+3 이벤트!">
+                                                </div>
+                                                <div class="title">
+                                                    <div>2+3 이벤트!</div>
+                                                    <div>쟁여두고 먹어요~</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1301.jpg" alt="여름 필수템!">
+                                                </div>
+                                                <div class="title">
+                                                    <div>여름 필수템!</div>
+                                                    <div>쿨링레이저제모기</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1304.jpg" alt="10%신상세일">
+                                                </div>
+                                                <div class="title">
+                                                    <div>10%신상세일</div>
+                                                    <div>초특가가격!</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1307.jpg" alt="파격세일 지금사">
+                                                </div>
+                                                <div class="title">
+                                                    <div>파격세일 지금사</div>
+                                                    <div>11,900원 SALE</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1310.jpg" alt="이렇게나편하다니">
+                                                </div>
+                                                <div class="title">
+                                                    <div>이렇게나편하다니</div>
+                                                    <div>제시믹스니까1+1</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1302.jpg" alt="2주만 관리하면">
+                                                </div>
+                                                <div class="title">
+                                                    <div>2주만 관리하면</div>
+                                                    <div>바지가 헐렁해져~</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1305.jpg" alt="안묻어나안지워져">
+                                                </div>
+                                                <div class="title">
+                                                    <div>안묻어나안지워져</div>
+                                                    <div>1+1 여름타투립</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1308.jpg" alt="막 찍어도 인생샷<">
+                                                </div>
+                                                <div class="title">
+                                                    <div>막 찍어도 인생샷</div>
+                                                    <div>여름 원피스코디~</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1311.jpg" alt="14K세트 2만원대">
+                                                </div>
+                                                <div class="title">
+                                                    <div>14K세트 2만원대</div>
+                                                    <div>취향대로 5컬러~</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1303.jpg" alt="20% 세일받고">
+                                                </div>
+                                                <div class="title">
+                                                    <div>20% 세일받고</div>
+                                                    <div>똑똑한 쇼핑!</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1306.jpg" alt="7월한정! 1+1구성">
+                                                </div>
+                                                <div class="title">
+                                                    <div>7월한정! 1+1구성</div>
+                                                    <div>케이스+아크릴톡!</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1309.jpg" alt="맥시멈 공간활용">
+                                                </div>
+                                                <div class="title">
+                                                    <div>맥시멈 공간활용</div>
+                                                    <div>이동~수납 조리대</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="photoArea">
+                                                    <img src="../src/resources/images/naver_shopping/1312.jpg" alt="이것 쓰고나니">
+                                                </div>
+                                                <div class="title">
+                                                    <div>이것 쓰고나니</div>
+                                                    <div>청소 확~ </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="button wide">
+                                        <div class="prev"><a href="#" onClick="minusClick()" class="sprite_img icon"></a></div>
+                                        <div class="countN">
+                                            <p><a id="clicks">1</a>/2</p>
+                                        </div>
+                                        <div class="next"><a href="#" onClick="plusClick()"  class="sprite_img icon"></a></div>
+                                    </div>
+                                </div>
+                                <div id="play_zone">
+                                    <div id="play_fun">
+                                        <div class="wrapping clearfix">
+                                            <div class="top clearfix">
+                                                <div class="left">
+                                                    <strong class="title">PLAY · FUN</strong>
+                                                </div>
+                                                <div class="button">
+                                                    <div class="countN">
+                                                        <p><a id="clicks">1</a>/2</p>
+                                                    </div>
+                                                    <div class="prev"><a href="#" onClick="minusClick()" class="sprite_img icon"></a></div>
+                                                    <div class="next"><a href="#" onClick="plusClick()"  class="sprite_img icon"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="i_wrap clearfix">
+                                                <div class="insideright">
+                                                    <div class="photoArea">
+                                                        <a href="#"><img src="../src/resources/images/naver_shopping/999.jpg" width="139" height="94" alt="바나나빌딩"></a>
+                                                    </div>
+                                                    <div class="textArea">
+                                                        <a href="#">
+                                                            <em class="theme_category">바나나빌딩</em>
+                                                            <strong class="title_else">이거 있으면 외제차 안부러워</strong>
+                                                            <p class="desc">
+                                                                아내에게 특급 칭찬받는비법
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="insideright">
+                                                    <div class="photoArea">
+                                                        <a href="#"><img src="../src/resources/images/naver_shopping/1000.jpg" width="139" height="94" alt="비블랙"></a>
+                                                    </div>
+                                                    <div class="textArea">
+                                                        <a href="#">
+                                                            <em class="theme_category">비블랙</em>
+                                                            <strong class="title_else">간편한 근력운동 필수템</strong>
+                                                            <p class="desc">
+                                                                상체폭발엔 푸시업바!
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="insideright">
+                                                    <div class="photoArea">
+                                                        <a href="#"><img src="../src/resources/images/naver_shopping/1001.jpg" width="139" height="94" alt="고려생활건강"></a>
+                                                    </div>
+                                                    <div class="textArea">
+                                                        <a href="#">
+                                                            <em class="theme_category">고려생활건강</em>
+                                                            <strong class="title_else">더위 잊게 만드는</strong>
+                                                            <p class="desc">
+                                                                냉감 Cool반팔티
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="todays_sail">
+                                        <div class="wrapping clearfix">
+                                            <div class="top clearfix">
+                                                <div class="left">
+                                                    <strong class="title">오늘의 특가ZONE</strong>
+                                                </div>
+                                                <div class="right">
+                                                    <div class="button">
+                                                        <div class="countN">
+                                                            <p><a id="clicks">1</a>/2</p>
+                                                        </div>
+                                                        <div class="prev"><a href="#" onClick="minusClick()" class="sprite_img icon"></a></div>
+                                                        <div class="next"><a href="#" onClick="plusClick()"  class="sprite_img icon"></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="i_wrap">
+                                                <div class="inside">
+                                                    <div class="photoArea">
+                                                        <a href="#"><img src="../src/resources/images/naver_shopping/99.jpg" width="163" height="163" alt="기름 튈 걱정 끝!"></a>
+                                                    </div>
+                                                    <div class="textArea">
+                                                        <a href="#">
+                                                            <strong class="title_else">기름 튈 걱정 끝!</strong>
+                                                            <div class="priceWrap">
+                                                                <p class="discount">43%</p>
+                                                                <p class="price">8,400원</p>
+                                                                <p class="original">14,900원</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="inside">
+                                                    <div class="photoArea">
+                                                        <a href="#"><img src="../src/resources/images/naver_shopping/100.jpg" width="163" height="163" alt="튼튼 넉넉 컵홀더 끝판왕!"></a>
+                                                    </div>
+                                                    <div class="textArea">
+                                                        <a href="#">
+                                                            <strong class="title_else">튼튼 넉넉 컵홀더 끝판왕!</strong>
+                                                            <div class="priceWrap">
+                                                                <p class="discount">22%</p>
+                                                                <p class="price">48,800원</p>
+                                                                <p class="original">63,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- // -->
+        </div>
+         <!-- // -->
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer_wrap">
+                <div class="banner">
+                    <div class="insideright">
+                        <div class="photoArea">
+                            <a href="#"><img src="../src/resources/images/footer/1.png" 
+                                width="160" width="86" alt="책방라이브"></a>
+                        </div>
+                        <div class="textArea">
+                            <a href="#">
+                                <em class="theme_category">중소기업중앙회</em>
+                                <strong class="title_else">
+                                    중소기업 서포터즈!
+                                </strong>
+                                <p class="desc">
+                                    7. 19 ~ 8.22
+                                </p>
+                                <div class="source_box">
+                                    <span class="source_inner">방학에뭐하지? 행복한중기씨</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="insideright">
+                        <div class="photoArea">
+                            <a href="#"><img src="../src/resources/images/footer/2.jpg" 
+                                width="160" width="86" alt="책방라이브"></a>
+                        </div>
+                        <div class="textArea">
+                            <a href="#">
+                                <em class="theme_category">온스테이지 2.0</em>
+                                <strong class="title_else">
+                                    HEESU
+                                </strong>
+                                <p class="desc">
+                                    기교가 아닌 솔직함
+                                </p>
+                                <div class="source_box">
+                                    <span class="source_inner">네오 솔 싱어송라이터</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="insideright">
+                        <div class="photoArea">
+                            <a href="#"><img src="../src/resources/images/footer/3.jpg" 
+                                width="160" width="86" alt="책방라이브"></a>
+                        </div>
+                        <div class="textArea">
+                            <a href="#">
+                                <em class="theme_category">해피빈 펀딩 기획전</em>
+                                <strong class="title_else">
+                                    한 달간 3천원 적립
+                                </strong>
+                                <p class="desc">
+                                    시원한 오미자 음료부터,
+                                </p>
+                                <div class="source_box">
+                                    <span class="source_inner">다섯가지맛 누룽지까지!</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notice">
+                    <div class="no_left">
+                        <a href="#">공지사항</a>
+                    </div>
+                    <a href="#" class="no_right">
+                        서비스 전체보기
+                        <div class="sprite_img icon"></div>
+                    </a>
+                </div>
+                <div class="systemMap">
+                    <div class="wrap">
+                        <div class="partner">
+                            <p>Creater</p>
+                            <a href="#" class="link">크리에이터</a>
+                            <a href="#" class="link">스쿨비즈니스</a>
+                        </div>
+                        <div class="partner">
+                            <p>Partners</p>
+                            <a href="#" class="link">SME 풀케어 시스템</a>
+                            <a href="#" class="link">비즈니스 · 광고</a>
+                            <a href="#" class="link">스토어 개설</a>
+                            <a href="#" class="link">지역업체 등록</a>
+                            <a href="#" class="link">엑스퍼트 등록</a>
+                        </div>
+                        <div class="partner">
+                            <p>Developers</p>
+                            <a href="#" class="link">네이버 개발자 센터</a>
+                            <a href="#" class="link">오픈 API</a>
+                            <a href="#" class="link">오픈소스</a>
+                            <a href="#" class="link">네이버 D2</a>
+                            <a href="#" class="link">네이버 D2SF</a>
+                            <a href="#" class="link">네이버 랩스</a>
+
+                        </div>
+                        <div class="downlink">
+                            <div class="service">
+                                <div class="text">
+                                    <p>웨일브라우저</p>
+                                    <a href="#">다운받기</a>
+                                </div>
+                                <img src="../src/resources/images/1.png" width="48" height="48" alt="">
+                            </div>
+                            <div class="service">
+                                <div class="text">
+                                    <p>프로젝트 꽃</p>
+                                    <a href="#">바로가기</a>
+                                </div>
+                                <img src="../src/resources/images/2.png" width="48" height="48" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="corp">
+                    <a href="#" class="link">회사소개</a>
+                    <a href="#" class="link">인재채용</a>
+                    <a href="#" class="link">제휴제안</a>
+                    <a href="#" class="link">이용약관</a>
+                    <a href="#" class="link">개인정보처리방침</a>
+                    <a href="#" class="link">청소년보호정책</a>
+                    <a href="#" class="link">네이버 정책</a>
+                    <a href="#" class="link">고객센터</a>
+                    <a href="#" class="link">ⓒ NAVER Corp.</a>
+                </div>
+            </div>
+        </div>
+         <!-- // -->
+    </div>
+    
+<script src="../src/resources/js/lib/rolling.js"></script>
+<script src="../src/resources/js/lib/slick.js"></script>
+<script src="../src/resources/js/lib/swiper.js"></script>
+<script src="../src/resources/js/lib/tools.js"></script>
+
+</body>
+
+</html>

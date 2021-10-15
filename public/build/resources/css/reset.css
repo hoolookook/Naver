@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+form,
+main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body,
+button,
+input,
+p,
+a {
+  font-size: 12px;
+  line-height: 16px;
+  color: #202020;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  line-height: inherit;
+}
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* img:hover {
+  transform: perspective(500px) translateZ(1px);
+} */
+
+/* hover */
+.photoArea:hover ~ .textArea .title_else {
+  text-decoration: underline;
+}
+.textArea:hover .title_else {
+  text-decoration: underline;
+}
+.shopping .cate_wrap li:hover a {
+  text-decoration: underline;
+}
+.item:hover .title div {
+  text-decoration: underline;
+}
+.item:hover .photoArea img {
+  transform: perspective(1000px) translateZ(50px);
+  transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  image-rendering: -webkit-optimize-contrast;
+}
+#wrap .etc_wrap .JuniorNaver:hover {
+  background-position: -257px -296px;
+}
+#wrap .etc_wrap .HappyBin:hover {
+  background-position: -380px -198px;
+}
+#wrap .search_wrap .keyboard_wrap:hover .keyboard_Button {
+  opacity: 0.9;
+}
+.weather:hover .w_place a {
+  text-decoration: underline;
+}
+.Nfog:hover li:last-child a {
+  text-decoration: underline;
+}
+#right_item .account_area li:hover a {
+  text-decoration: underline;
+}
+#left_item .news_option .option_right:first-child li:hover .icon,
+#left_item .news_option .option_right:last-child li:hover .icon {
+  opacity: 0.9;
+}
+.rolling_slide li:hover a {
+  text-decoration: underline;
+}
+.menu_left li:hover a {
+  text-decoration: underline;
+}
+.today_read .top .right li:hover a {
+  text-decoration: underline;
+}
+#footer .no_left:hover a {
+  text-decoration: underline;
+}
+#footer .no_right:hover {
+  text-decoration: underline;
+}
+#footer .systemMap a:hover {
+  text-decoration: underline;
+}
+#footer .corp a:hover {
+  text-decoration: underline;
+}
+#bestseller_book .list_book a:hover strong {
+  text-decoration: underline;
+}
+#bestseller_book .list_book a:hover img {
+  transform: perspective(1000px) translateZ(50px);
+  transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  image-rendering: -webkit-optimize-contrast;
+}
+/* --- */
+/* IR 효과 */
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+.sprite_img {
+  background: url(../images/sp_main_4efc7a.png) no-repeat;
+  background-size: 440px 408px;
+  display: inline-block;
+}
+.weather_img {
+  background: url(../images/sp_autocomplete_4d068feb.png) no-repeat;
+  background-size: 150px 152px;
+  display: inline-block;
+}
+
+.shopping_img {
+  background: url(../images/sp_shop_bffdc9.png) no-repeat;
+  background-size: 107px 78px;
+  display: inline-block;
+}
+/* clearfix를 쓰는이유
+ 서브 메뉴가 있을수 있으므로  overflow: hidden 은 쓰지 않는다 <-서브메뉴가 가려지기 때문*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
