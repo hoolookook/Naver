@@ -4,6 +4,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  min-width: 1190px;
 }
 #footer .footer_wrap {
   width: 1160px;

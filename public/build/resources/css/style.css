@@ -21,3 +21,34 @@
   top: -521px;
 }
 /* sprite 2x라서 사이즈잴때 /2로계산 */
+.floatMenu {
+  position: fixed;
+  /* display: inline-block; */
+  bottom: 15px;
+  right: 20px;
+  z-index: 4;
+  /* padding-bottom: 15px; */
+}
+.floatMenu button {
+  border: none;
+}
+.floatMenu .darkMod {
+  width: 136px;
+  height: 53px;
+  background-position: -270px -109px;
+}
+.floatMenu .darkMod:hover {
+  background-position: -270px -55px;
+}
+.floatMenu .darkMod:focus {
+  width: 145px;
+  background-position: -270px 0px;
+}
+.floatMenu .Upkey {
+  width: 51px;
+  height: 51px;
+  background-position: -203px -212px;
+}
+.floatMenu .Upkey:hover {
+  background-position: -150px -212px;
+}
