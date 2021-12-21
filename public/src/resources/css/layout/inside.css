@@ -1,15 +1,10 @@
-/* .desc:hover {
-  text-decoration: underline;
-} */
 .insideright:hover img {
   transform: perspective(1000px) translateZ(50px);
   transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
     -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   image-rendering: -webkit-optimize-contrast;
 }
-.photoArea:hover {
-  text-decoration: underline;
-}
+
 .theme_category {
   font-style: normal;
   color: #42be6f;
@@ -22,9 +17,7 @@
   display: block;
   font-weight: 700;
 }
-.title_else:hover {
-  text-decoration: underline;
-}
+
 .title_else {
   overflow: hidden;
   text-overflow: ellipsis;

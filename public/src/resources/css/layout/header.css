@@ -118,9 +118,6 @@
   font-size: 11px;
   color: #404040;
 }
-#wrap .etc_wrap .way_back_home:hover {
-  text-decoration: underline;
-}
 #wrap .etc_wrap .next_btn {
   background-position: -383px -216px;
   display: inline-block;
@@ -228,9 +225,6 @@
   line-height: 30px;
   padding: 11px 5px;
   color: #202020;
-}
-#gnb .gnb_wrap .more_btn:hover {
-  text-decoration: underline;
 }
 #gnb .gnb_wrap .more_btn .icon {
   background-position: -222px -281px;

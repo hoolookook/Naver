@@ -40,18 +40,29 @@ a {
 } */
 
 /* hover */
-.photoArea:hover ~ .textArea .title_else {
+
+.photoArea:hover ~ .textArea .title_else,
+.textArea:hover .title_else,
+.shopping .cate_wrap li:hover a,
+.item:hover .title div,
+.weather:hover .w_place a,
+.Nfog:hover li:last-child a,
+.rolling_slide li:hover a,
+.menu_left li:hover a,
+.today_read .top .right li:hover a,
+#footer .no_left:hover a,
+#footer .no_right:hover,
+#footer .systemMap a:hover,
+#footer .corp a:hover,
+#bestseller_book .list_book a:hover strong,
+#wrap .etc_wrap .way_back_home:hover,
+#gnb .gnb_wrap .more_btn:hover,
+#right_item .account_area li:hover a,
+#right_item #shopping .shopping_Area .shopping_cate .cate_wrap li:hover,
+#right_item #play_zone .insideright:hover .desc {
   text-decoration: underline;
 }
-.textArea:hover .title_else {
-  text-decoration: underline;
-}
-.shopping .cate_wrap li:hover a {
-  text-decoration: underline;
-}
-.item:hover .title div {
-  text-decoration: underline;
-}
+
 .item:hover .photoArea img {
   transform: perspective(1000px) translateZ(50px);
   transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
@@ -67,43 +78,12 @@ a {
 #wrap .search_wrap .keyboard_wrap:hover .keyboard_Button {
   opacity: 0.9;
 }
-.weather:hover .w_place a {
-  text-decoration: underline;
-}
-.Nfog:hover li:last-child a {
-  text-decoration: underline;
-}
-#right_item .account_area li:hover a {
-  text-decoration: underline;
-}
+
 #left_item .news_option .option_right:first-child li:hover .icon,
 #left_item .news_option .option_right:last-child li:hover .icon {
   opacity: 0.9;
 }
-.rolling_slide li:hover a {
-  text-decoration: underline;
-}
-.menu_left li:hover a {
-  text-decoration: underline;
-}
-.today_read .top .right li:hover a {
-  text-decoration: underline;
-}
-#footer .no_left:hover a {
-  text-decoration: underline;
-}
-#footer .no_right:hover {
-  text-decoration: underline;
-}
-#footer .systemMap a:hover {
-  text-decoration: underline;
-}
-#footer .corp a:hover {
-  text-decoration: underline;
-}
-#bestseller_book .list_book a:hover strong {
-  text-decoration: underline;
-}
+
 #bestseller_book .list_book a:hover img {
   transform: perspective(1000px) translateZ(50px);
   transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),

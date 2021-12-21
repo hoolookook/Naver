@@ -269,9 +269,7 @@
   /* height: 1600px; */
   border: 1px solid #e4e8eb;
 }
-#right_item #shopping .shopping_Area .shopping_cate .cate_wrap li:hover {
-  text-decoration: underline;
-}
+
 #right_item #shopping .shopping_Area .shopping_cate .cate_wrap {
   overflow: hidden;
   padding: 12px 4px 11px 10px;
@@ -371,9 +369,7 @@
 #right_item #play_zone .insideright .textArea .title_else {
   margin: 15px 0 0 0;
 }
-#right_item #play_zone .insideright:hover .desc {
-  text-decoration: underline;
-}
+
 #right_item #play_zone .insideright .textArea .desc {
   font-size: 12px;
   margin: 0 0 0 0;

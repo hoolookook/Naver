@@ -1,24 +1,15 @@
-$(document).ready(function () {
-  $("cate_wrap")
-    .find("a")
-    .hover(
-      function () {
-        $(this).css("text-decoration", "underline");
-      },
-      function () {
-        $(this).css("text-decoration", "none");
-      }
-    );
-  //   $('cate_wrap').find('a').hover
-  //   $("a").hover(
-  //     function () {
-  //       $(this).css("text-decoration", "underline");
-  //     },
-  //     function () {
-  //       $(this).css("text-decoration", "none");
-  //     }
-  //   );
-});
+// $(document).ready(function () {
+//   $("cate_wrap")
+//     .find("a")
+//     .hover(
+//       function () {
+//         $(this).css("text-decoration", "underline");
+//       },
+//       function () {
+//         $(this).css("text-decoration", "none");
+//       }
+//     );
+// });
 // $('a').on('mouseenther mouseleave', function{
 //     $('.textArea').trigger(e.type);
 // })\
