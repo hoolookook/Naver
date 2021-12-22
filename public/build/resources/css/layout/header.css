@@ -1,2 +1,307 @@
+/* header */
+#header {
+  overflow: hidden;
+  min-width: 1190px;
+}
+#header #wrap {
+  position: relative;
+  width: 1160px;
+  height: 160px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJsYXlvdXQvaGVhZGVyLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiIl0sImZpbGUiOiJsYXlvdXQvaGVhZGVyLmNzcyJ9 */
+#wrap .logo_wrap {
+  position: relative;
+  height: 100%;
+}
+
+#wrap .logo_wrap .logo {
+  position: absolute;
+  top: 30%;
+}
+
+#wrap .logo_wrap .naver_logo {
+  display: inline-block;
+  background-position: 0 -158px;
+  width: 222px;
+  height: 52px;
+}
+
+/* searchbar */
+#wrap .search_wrap {
+  position: absolute;
+  top: 51px;
+  left: 281px;
+}
+#wrap .search_wrap .search_Term {
+  width: 550px;
+  height: 26px;
+  border: 2px solid #19ce60;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+  font-size: 18px;
+  padding: 13px 15px;
+  font-weight: 700;
+}
+#wrap .search_wrap .search_Button {
+  position: absolute;
+  line-height: 10px;
+  right: 0;
+  width: 55px;
+  height: 55px;
+  background-color: #19ce60;
+  text-align: center;
+  border-radius: 0 3px 3px 0;
+  border: 1px solid #19ce60;
+}
+#wrap .search_wrap .search_Button .img {
+  display: inline-block;
+  background-position: 0 -383px;
+  width: 25px;
+  height: 25px;
+}
+#wrap .search_wrap .keyboard_wrap {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  right: 93px;
+}
+#wrap .search_wrap .keyboard_Button {
+  position: absolute;
+  background-position: -420px -281px;
+  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  vertical-align: top;
+  margin: -6px 0 0 -10px;
+}
+#wrap .search_wrap .autoComplite_wrap {
+  position: absolute;
+  width: 22px;
+  height: 100%;
+  right: 59px;
+  top: 4px;
+}
+#wrap .search_wrap .autoC_Button {
+  position: absolute;
+  background-position: -170px -151px;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  vertical-align: top;
+  margin: -6px 0 0 -10px;
+}
+
+/* etc */
+
+#wrap .etc_wrap {
+  position: absolute;
+  height: 20px;
+  right: 53px;
+  top: 11px;
+}
+#wrap .etc_wrap ul {
+  height: 20px;
+}
+#wrap .etc_wrap ul li {
+  margin-right: 10px;
+  float: left;
+  line-height: 19px;
+}
+#wrap .etc_wrap .way_back_home {
+  font-size: 11px;
+  color: #404040;
+}
+#wrap .etc_wrap .next_btn {
+  background-position: -383px -216px;
+  display: inline-block;
+  width: 26px;
+  height: 20px;
+  vertical-align: top;
+  margin-right: 8px;
+}
+#wrap .etc_wrap .next_btn::after {
+  content: "";
+  height: 10px;
+  width: 1px;
+  position: absolute;
+  right: 124px;
+  top: 4px;
+  border-right: 1px solid #e4e8eb;
+}
+#wrap .etc_wrap .JuniorNaver {
+  background-position: -333px -267px;
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+}
+#wrap .etc_wrap .HappyBin {
+  background-position: -257px -308px;
+  display: inline-block;
+  width: 34px;
+  height: 12px;
+  margin-top: 4px;
+}
+
+/* gnb메뉴 */
+
+#gnb {
+  position: relative;
+  border-bottom: 1px solid #e4e8eb;
+  border-top: 1px solid #e4e8eb;
+}
+
+#gnb .gnb_wrap {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+#gnb li {
+  font-size: 15px;
+}
+
+/* green_menu */
+
+#gnb .gnb_wrap ul {
+  float: left;
+  padding: 11px 0px;
+}
+#gnb .gnb_wrap ul li {
+  float: left;
+  padding: 0 5px 0 5px;
+}
+#gnb .gnb_wrap ul li a {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+  display: block;
+}
+#gnb .gnb_wrap .green_menu li a {
+  color: #03c75a;
+}
+#gnb .gnb_wrap .green_menu .mail .icon {
+  vertical-align: sub;
+  margin: 4px 3px -3px 0;
+  background-position: -47px -386px;
+}
+#gnb .gnb_wrap .green_menu .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 3px 3px 0 0;
+}
+#gnb .gnb_wrap .green_menu .shopping a {
+  background-position: -375px -242px;
+}
+#gnb .gnb_wrap .green_menu .shopping_live a {
+  width: 54px;
+  background-position: -270px -242px;
+}
+#gnb .gnb_wrap .green_menu .TV .icon {
+  margin: -4px -3px -9px 0;
+  width: 14px;
+  background-position: -399px -242px;
+}
+
+/* blackmenu */
+
+#gnb .gnb_wrap .black_menu li a {
+  color: #000;
+}
+
+/* morebtn */
+#gnb .gnb_wrap .more_btn {
+  float: left;
+  font-size: 13px;
+  line-height: 30px;
+  padding: 11px 5px;
+  color: #202020;
+}
+#gnb .gnb_wrap .more_btn .icon {
+  background-position: -222px -281px;
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  margin: 0 0px 2px 8px;
+}
+
+/* weather_slide */
+#gnb .slide {
+  position: absolute;
+  top: 0px;
+  height: 39px;
+  width: 270px;
+  overflow: hidden;
+  right: 47px;
+}
+#gnb .slide .Nfog,
+#gnb .slide .weather {
+  height: 100%;
+}
+#gnb .slide .Nfog li {
+  padding: 0 10px 0 0;
+}
+#gnb .slide .Nfog li:nth-child(3) {
+  padding: 0 15px 0 0;
+}
+#gnb .slide .Nfog .fog_12p {
+  color: #807e7e;
+  font-size: 12px;
+}
+#gnb .slide .Nfog .fog_13p {
+  color: #202020;
+  font-size: 12px;
+}
+#gnb .slide .Nfog .icon {
+  width: 18px;
+  height: 18px;
+  margin: 6px 0 0 0;
+  background-position: -420px -152px;
+}
+
+#gnb .slide .weather {
+  margin-right: 0;
+}
+#gnb .slide .weather li {
+  padding: 0 8px 0 0;
+}
+#gnb .slide .weather .icon {
+  width: 15px;
+  margin: 4px 0 0 0;
+  background-position: 1px -1px;
+}
+#gnb .slide .weather .w_nowtemp {
+  padding-left: 11px;
+}
+#gnb .slide .weather .w_nowtemp a {
+  font-size: 15px;
+}
+#gnb .slide .weather .w_detail a {
+  font-size: 13px;
+  color: #202020;
+}
+#gnb .slide .weather .w_temp a {
+  font-size: 12px;
+}
+#gnb .slide .weather .w_temp.left a {
+  color: #2586ee;
+}
+#gnb .slide .weather .w_temp.middle a {
+  color: #807e7e;
+}
+#gnb .slide .weather .w_temp.right a {
+  color: #e9564a;
+}
+#gnb .slide .weather .w_place a {
+  color: #807e7e;
+  font-size: 12px;
+}

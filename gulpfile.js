@@ -21,13 +21,10 @@ const gulp = require("gulp"),
   print = require("gulp-print").default,
   rename = require("gulp-rename"), // 파일이름 변경
   stripDebug = require("gulp-strip-debug"), //
-  sass = require("gulp-sass")(require("sass")), // SASS 파일 컴파일
   sourcemaps = require("gulp-sourcemaps"), // SASS sourcemap
   uglify = require("gulp-uglify"), // JS 파일 압축
   useref = require("gulp-useref"), // 폴더 경로대로 생성
   autoprefixer = require("gulp-autoprefixer"); //vendor prefix
-// postcss = require("gulp-postcss")
-// sorting = require('postcss-sorting');
 
 const src = "public/src/",
   resources = "resources/",
@@ -35,7 +32,6 @@ const src = "public/src/",
   suffix = ".min",
   version = "",
   charset = "";
-//charset = '@charset "UTF-8";\n';
 const paths = {
   html: {
     src: [
@@ -47,8 +43,7 @@ const paths = {
     dist: [`${src}**/*.html`, `!${src}**/include/*.html`],
   },
   css: {
-    scss: `${src}${resources}sass/**/*.scss`,
-    src: `${src}**/css/*.css`,
+    src: `${src}**/css/**/*.css`,
   },
   js: {
     src: [`${src}**/js/*.js`, `!${src}**/js/lib/*.js`],
@@ -62,53 +57,12 @@ const paths = {
     src: `${src}**/css/fonts/*`,
   },
 };
-const sassOption = {
-  /**
-   * outputStyle (Type : String , Default : nested)
-   * CSS의 컴파일 결과 코드스타일 지정
-   * Values : nested, expanded, compact, compressed
-   */
-  outputStyle: "expanded",
-  /**
-   * indentType (>= v3.0.0 , Type : String , Default : space)
-   * 컴파일 된 CSS의 "들여쓰기" 의 타입 * Values : space , tab
-   */
-  indentType: "tab",
-  /**
-   * indentWidth (>= v3.0.0, Type : Integer , Default : 2)
-   * 컴파일 된 CSS의 "들여쓰기" 의 갯수
-   */
-  indentWidth: 1, // outputStyle 이 nested, expanded 인 경우에 사용
-  /**
-   * sourceComments (Type : Boolean , Default : false)
-   * 컴파일 된 CSS 에 원본소스의 위치와 줄수 주석표시.
-   */
-  //sourceComments: true
-};
+
 var buildType = false, // build : false / dist : true
   distPath = "public/build/", //distributable
   htmlSrc = paths.html.src,
   imgSrc = paths.img.src;
-var AA = true,
-  AB = true,
-  AC = false,
-  AD = true,
-  AE = false,
-  AF = false,
-  AG = false,
-  AH = false;
 
-var update = "2021-08-10";
-/*
-AA : 메인,
-AB : 지원센터소개,
-AC : 권리자찾기,
-AD : 디지털저작권거래소,
-AE : 법정허락,
-AF : 상당한조사지원
-AG : 고객센터,
-AH : My Page
-*/
 function clean() {
   return del(`${distPath}*`);
 }
@@ -134,16 +88,7 @@ async function html() {
           version: version,
           prefix: prefix,
           suffix: suffix,
-          AA: AA,
-          AB: AB,
-          AC: AC,
-          AD: AD,
-          AE: AE,
-          AF: AF,
-          AG: AG,
-          AH: AH,
           buildType: buildType,
-          update: update,
         },
       })
     )
@@ -151,55 +96,11 @@ async function html() {
     .pipe(gulp.dest(distPath));
 }
 async function css() {
-  // sass
-  gulp
-    .src(paths.css.scss)
-    .pipe(useref())
-    .pipe(gulpif(!buildType, sourcemaps.init()))
-    .pipe(sass(sassOption).on("error", sass.logError))
-    .pipe(
-      gulpif(
-        buildType,
-        autoprefixer({ browsers: ["chrome > 0", "firefox > 0", "ie > 0"] })
-      )
-    )
-    .pipe(
-      rename({
-        prefix: prefix,
-      })
-    )
-    //.pipe(gulpif(!buildType, sourcemaps.write('.',{includeContent: true})))
-    .pipe(gulpif(!buildType, sourcemaps.write()))
-    .pipe(gulpif(buildType, beautify.css()))
-    .pipe(gulp.dest(`${distPath}${resources}/css`));
-  // sass min
-  if (buildType) {
-    gulp
-      .src(paths.css.scss)
-      .pipe(useref())
-      .pipe(gulpif(!buildType, sourcemaps.init()))
-      .pipe(sass(sassOption).on("error", sass.logError))
-      .pipe(gulpif(buildType, cleanCSS()))
-      .pipe(
-        gulpif(
-          buildType,
-          autoprefixer({ browsers: ["chrome > 0", "firefox > 0", "ie > 0"] })
-        )
-      )
-      .pipe(
-        rename({
-          prefix: prefix,
-          suffix: suffix,
-        })
-      )
-      //.pipe(gulpif(!buildType, sourcemaps.write('.',{includeContent: true})))
-      .pipe(gulpif(!buildType, sourcemaps.write()))
-      .pipe(gulp.dest(`${distPath}${resources}/css`));
-  }
-  // css폴더 파일
   gulp
     .src(paths.css.src)
     .pipe(useref())
+    .pipe(gulpif(buildType, cleanCSS({ compatibiliy: "ie8" })))
+    .pipe(gulpif(buildType, concat("all.css")))
     .pipe(gulp.dest(`${distPath}`));
 }
 async function js() {
@@ -211,7 +112,6 @@ async function js() {
     .pipe(
       rename({
         prefix: prefix,
-        //suffix: suffix
       })
     )
     .pipe(gulp.dest(`${distPath}`));
@@ -221,6 +121,7 @@ async function js() {
       .src(paths.js.src)
       .pipe(gulpif(buildType, stripDebug())) // 모든 console.log들과 alert 제거
       .pipe(gulpif(buildType, uglify()))
+      // .pipe(concat("main.min.js"))
       .pipe(useref())
       .pipe(
         rename({
@@ -232,6 +133,21 @@ async function js() {
   }
   // js lib
   gulp.src(paths.js.lib).pipe(gulp.dest(`${distPath}`));
+  if (buildType) {
+    gulp
+      .src(paths.js.lib)
+      .pipe(gulpif(buildType, stripDebug())) // 모든 console.log들과 alert 제거
+      .pipe(gulpif(buildType, uglify()))
+      // .pipe(concat("main.min.js"))
+      .pipe(useref())
+      .pipe(
+        rename({
+          prefix: prefix,
+          suffix: suffix,
+        })
+      )
+      .pipe(gulp.dest(`${distPath}`));
+  }
   // js temp
   gulp
     .src(paths.js.temp)
@@ -304,7 +220,7 @@ gulp.task("bfj", bfj);
 function watch() {
   buildType = false;
   gulp.watch(`${src}**/**/*.html`, html);
-  gulp.watch([paths.css.scss, paths.css.src], css);
+  gulp.watch(paths.css.src, css);
   gulp.watch(paths.js.src, js);
   gulp.watch(paths.img.src, img);
 }
