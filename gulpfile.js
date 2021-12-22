@@ -121,7 +121,6 @@ async function js() {
       .src(paths.js.src)
       .pipe(gulpif(buildType, stripDebug())) // 모든 console.log들과 alert 제거
       .pipe(gulpif(buildType, uglify()))
-      // .pipe(concat("main.min.js"))
       .pipe(useref())
       .pipe(
         rename({
@@ -138,7 +137,6 @@ async function js() {
       .src(paths.js.lib)
       .pipe(gulpif(buildType, stripDebug())) // 모든 console.log들과 alert 제거
       .pipe(gulpif(buildType, uglify()))
-      // .pipe(concat("main.min.js"))
       .pipe(useref())
       .pipe(
         rename({
